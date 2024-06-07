@@ -60,7 +60,7 @@ func main() {
 		c.JSON(http.StatusOK, ret)
 	})
 
-	router.Run("0.0.0.0:8881")
+	router.Run(":8881")
 }
 
 func getCountryEvents(c *gin.Context) Response {
